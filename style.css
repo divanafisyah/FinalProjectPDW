@@ -1,0 +1,57 @@
+body {
+    background-image: url("perpus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 187, 92, 0.8);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+*
+{
+    padding: 50px;
+    top: 30;
+    right: 50;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+section{
+    text-align: center;
+    align-items: center;
+    border: solid blue;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.btn{
+    justify-content: center;
+    text-align: center;
+}
+.pendaftaran, a{
+    background-color:rgba(255, 187, 92, 0.8);
+    color: white;
+    text-decoration: none;
+    
+    width: 100px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+}

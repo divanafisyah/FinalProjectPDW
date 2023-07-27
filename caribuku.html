@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body>
+        <center>
+            <h1>PENCARIAN BUKU</h1>
+        </center>
+        <div class="search-container">
+            <center>
+            <form id="searchForm">
+                <input type="text" id="searchInput" class="search-input" placeholder="Masukkan judul buku...">
+                <button type="submit" class="search-button">Cari</button>
+            </form>
+            </center>
+        </div>
+
+        <div id="searchResults"></div>
+
+        <script>
+            document.getElementById("searchForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                var searchQuery = document.getElementById("searchInput").value;
+                var searchResults = [
+                    { title: "Buku Laut Bercerita", author: "Penulis Leila S. Chudori" },
+                    { title: "Buku Kata", author: "Penulis Rintik Sedu" },
+                    { title: "Buku Hello Cello", author: "Penulis Ijo Scripts" }
+                ];
+                var searchResultsContainer = document.getElementById("searchResults");
+                searchResultsContainer.innerHTML = "";
+
+                if (searchResults.length > 0) {
+                    for (var i = 0; i < searchResults.length; i++) {
+                        var book = searchResults[i];
+                        var resultItem = document.createElement("div");
+                        resultItem.innerHTML = "<h3>" + book.title + "</h3><p>" + book.author + "</p>";
+                        searchResultsContainer.appendChild(resultItem);
+                    }
+                } else {
+                    searchResultsContainer.innerHTML = "<p>Tidak ada hasil pencarian.</p>";
+                }
+            });
+        </script>
+    </body>
+</html>

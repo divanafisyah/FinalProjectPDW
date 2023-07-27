@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Data Peminjaman Buku</legend>
+                <p>Nama : <input type="text" name="nama"></p>
+                <p>Alamat : <input type="text" name="alamat"></p>
+                <p>Pekerjaan : <input type="text" name="pekerjaan"></p>
+                <p>Nomor HP : <input type="text" name="nohp"></p>
+            <p>
+                Jenis Kelamin :
+                <input type="radio" name="jk" value="laki-laki" checked />
+                    Laki - Laki
+                <input type="radio" name="jk" value="perempuan" />
+                    Perempuan
+            </p>
+            <p>
+            Jenis Buku Yang Dipinjam : <br>
+                <input type="checkbox" name="novel"> Novel
+                <input type="checkbox" name="majalah"> Majalah
+                <input type="checkbox" name="kamus"> Kamus
+                <input type="checkbox" name="komik"> Komik
+                <input type="checkbox" name="manga"> Manga
+                <input type="checkbox" name="ensiklopedia"> Ensiklopedia
+                <input type="checkbox" name="biografi"> Biografi
+                <input type="checkbox" name="naskah"> Naskah
+            </p>
+            <p>
+                Tanggal Peminjaman : 
+                <label for="dateInput"></label>
+                <input type="date" id="dateInput" name="dateInput">
+            <br><br>
+            </p>
+                <p>Judul Buku : <input type="text" name="judul"></p>
+                <p>Nomor ISBN : <input type="text" name="isbn"></p>
+                <p>Pengarang : <input type="text" name="pengarang"></p>
+            <p>
+            <p><input type="submit" value="submit"></p>
+            </fieldset>
+        </form>
+        <button class="back"><a href="index.html">Home</a></button>
+    </body>
+</html>
